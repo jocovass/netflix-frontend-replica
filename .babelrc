@@ -1,0 +1,13 @@
+{
+  "presets": [
+    // we tell babel the presets we are using, and which browsers we are targeting
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "browsers": ["> 1%", "last 2 versions"]
+        }
+      }
+    ] //or exp, react preset
+  ]
+}
