@@ -1,5 +1,6 @@
-import './main.scss';
+import './scss/main.scss';
 import './img/sprite.svg';
+import './img/cancel.png';
 
 console.log('working');
 
