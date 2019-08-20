@@ -35,8 +35,8 @@ module.exports = merge(common, {
             // css-loader will understand and handle the css imports in our js file
             loader: 'css-loader',
             options: {
-              importLoaders: 2, // tells the css loader there is other loader before
-              modules: true //css modules
+              importLoaders: 2 // tells the css loader there is other loader before
+              // modules: true //css modules
               // localIdentName: '[path][name]__[local]--[hash:base64:5]' // give the selector unique name
             }
           },
@@ -52,11 +52,11 @@ module.exports = merge(common, {
           }
         ]
       },
-      {
-        test: /\.(png|jpe?g|gif|svg)$/,
-        // images which exceed the limit specified wont be inlined but copied to the path given down
-        loader: 'url-loader?limit=8000&name=img/[name].[ext]'
-      },
+      // {
+      //   test: /\.(png|jpe?g|gif|svg)$/,
+      //   // images which exceed the limit specified wont be inlined but copied to the path given down
+      //   loader: 'url-loader'
+      // },
       {
         test: /\.(png|svg|jpe?g|gif)$/,
         use: {
