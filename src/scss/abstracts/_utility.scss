@@ -1,5 +1,6 @@
 .wrapper {
   width: 90%;
+  max-width: 150rem;
   margin: 0 auto;
 }
 
@@ -12,5 +13,5 @@
 }
 
 .closed {
-  display: none;
+  display: none !important;
 }

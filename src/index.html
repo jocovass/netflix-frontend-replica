@@ -29,14 +29,14 @@
       </div>
     </header>
     <!-- ABOUT -->
-    <main class="about">
+    <main class="about" id="about">
       <!-- navigation component -->
       <nav class="navigation">
         <div class="wrapper">
           <ul class="navigation__list">
             <!-- navigation item-exit -->
-            <li class="navigation__item active">
-              <a href="#" class="navigation__link">
+            <li class="navigation__item active" data-section="cancel">
+              <a href="#about" class="navigation__link">
                 <svg class="navigation__icon">
                   <use xlink:href="./img/sprite.svg#icon-exit"></use>
                 </svg>
@@ -48,8 +48,8 @@
             </li>
 
             <!-- navigation item-display -->
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">
+            <li class="navigation__item" data-section="watch">
+              <a href="#about" class="navigation__link">
                 <svg class="navigation__icon">
                   <use xlink:href="./img/sprite.svg#icon-display"></use>
                 </svg>
@@ -60,8 +60,8 @@
             </li>
 
             <!-- navigation item-price -->
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">
+            <li class="navigation__item" data-section="price">
+              <a href="#about" class="navigation__link">
                 <svg class="navigation__icon">
                   <use xlink:href="./img/sprite.svg#icon-price-tags"></use>
                 </svg>
@@ -75,7 +75,7 @@
       </nav>
 
       <!-- about moduls -->
-      <div class="about__modul-wrapper">
+      <div class="about__modul-wrapper wrapper">
         <!-- cancel any time -->
         <div class="cancel about-section">
           <div class="cancel__head">
@@ -155,7 +155,7 @@
             <a href="#" class="btn btn--medium">Try 30 Days Free</a>
           </div>
 
-          <div class="price__desc wrapper">
+          <div class="price__desc">
             <div class="price__table">
               <!-- Row 1-->
               <div class="price__row">
@@ -178,7 +178,7 @@
                 <div class="price__cell">
                   <div class="price__option">
                     Monthly price after free month ends on
-                    <span class="exp-data">17/09/19</span>
+                    <span class="exp-date">17/09/19</span>
                   </div>
                 </div>
                 <div class="price__cell">

@@ -1,4 +1,8 @@
 .about {
+  &__modul-wrapper {
+    padding: 10rem 0;
+  }
+
   .cancel {
     padding: 5rem;
     display: flex;
@@ -19,7 +23,7 @@
     }
 
     &__img {
-      width: 40rem;
+      width: 45rem;
       height: auto;
     }
   }
@@ -31,14 +35,14 @@
     }
 
     &__desc {
-      padding: 7rem 7rem 10rem;
+      padding: 7rem;
       display: flex;
       justify-content: space-around;
     }
 
     &__group {
       text-align: center;
-      width: 26rem;
+      width: 30rem;
     }
 
     &__img {
