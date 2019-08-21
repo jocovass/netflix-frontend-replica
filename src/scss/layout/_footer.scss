@@ -1,0 +1,19 @@
+.footer {
+  padding: 5rem;
+
+  &__list {
+    list-style: none;
+    max-width: 100rem;
+  }
+
+  &__item {
+    min-width: 15rem;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}

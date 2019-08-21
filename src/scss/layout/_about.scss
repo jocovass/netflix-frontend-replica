@@ -1,0 +1,81 @@
+.about {
+  .cancel {
+    padding: 5rem;
+    display: flex;
+    text-align: center;
+
+    &__head,
+    &__pic {
+      flex: 1 1 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__head {
+      flex-direction: column;
+      align-content: flex-end;
+    }
+
+    &__img {
+      width: 40rem;
+      height: auto;
+    }
+  }
+
+  .watch {
+    &__head {
+      padding: 5rem 5rem 2rem;
+      text-align: center;
+    }
+
+    &__desc {
+      padding: 7rem 7rem 10rem;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__group {
+      text-align: center;
+      width: 26rem;
+    }
+
+    &__img {
+      fill: $color-accent-light;
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+
+  .price {
+    &__head {
+      padding: 5rem;
+      text-align: center;
+    }
+
+    &__desc {
+      padding: 2rem 5rem 5rem;
+    }
+
+    &__table {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__row {
+      display: flex;
+      padding: 0.8rem;
+
+      &:nth-child(odd) {
+        background-color: $color-secondary;
+      }
+    }
+
+    &__cell {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}

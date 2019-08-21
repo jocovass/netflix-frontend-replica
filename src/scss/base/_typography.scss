@@ -30,3 +30,80 @@ body {
     color: $color-secondary;
   }
 }
+
+.header-secondary {
+  font-size: 2rem;
+}
+
+.header-tertiary {
+  font-size: 1.6rem;
+}
+
+.navigation {
+  &__link {
+    &,
+    &:link,
+    &:visited,
+    &:active {
+      color: $color-secondary;
+      text-decoration: none;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__link:hover &__title,
+  &__item.active &__title {
+    color: $color-primary;
+  }
+
+  &__link:hover &__icon,
+  &__item.active &__icon {
+    fill: $color-primary;
+  }
+}
+
+.watch {
+  &__paragraph {
+    font-size: 1.2rem;
+    color: $color-secondary;
+  }
+}
+
+.price {
+  &__type-header {
+    font-weight: 900;
+    font-size: 1.4rem;
+  }
+
+  &__type {
+    font-size: 1.2rem;
+  }
+
+  &__option {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+}
+
+.footer {
+  .we {
+    font-size: 1.4rem;
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:visited,
+    &:active {
+      text-decoration: none;
+      color: $color-secondary;
+      font-size: 1.2rem;
+      transition: all 0.15s ease-in-out;
+    }
+
+    &:hover {
+      color: $color-primary;
+      text-decoration: underline;
+    }
+  }
+}

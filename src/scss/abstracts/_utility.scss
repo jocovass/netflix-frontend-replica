@@ -1,3 +1,16 @@
-.skew-fix {
-  transform: skewX(30deg);
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.mt-medium {
+  margin-top: 2rem;
+}
+
+.mb-medium {
+  margin-bottom: 2rem;
+}
+
+.closed {
+  display: none;
 }
