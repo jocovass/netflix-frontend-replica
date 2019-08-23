@@ -19,7 +19,7 @@ module.exports = {
   output: {
     // with the resolve method we can generate a absolute path
     // __dirname is a var which refers to the directory this is running
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     filename: 'bundle.js',
     chunkFilename: '[id].js', // this prop let us use chunk of js files, basically is lazy loading to improve page performance
     publicPath: '' // tells webpack where our files are put, if it is a root folder of the server or it is a nested folder
