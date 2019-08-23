@@ -38,8 +38,8 @@ module.exports = merge(common, {
             // css-loader will understand and handle the css imports in our js file
             loader: 'css-loader',
             options: {
-              importLoaders: 2, // tells the css loader there is other loader before
-              modules: true //css modules
+              importLoaders: 2 // tells the css loader there is other loader before
+              // modules: true //css modules
             }
           },
           {
