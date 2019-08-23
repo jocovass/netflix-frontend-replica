@@ -54,11 +54,11 @@ module.exports = merge(common, {
           }
         ]
       },
-      {
-        test: /\.(png|jpe?g|gif)$/,
-        // images which exceed the limit specified wont be inlined but copied to the path given down
-        loader: 'url-loader'
-      },
+      // {
+      //   test: /\.(png|jpe?g|gif)$/,
+      //   // images which exceed the limit specified wont be inlined but copied to the path given down
+      //   loader: 'url-loader'
+      // },
       {
         test: /\.(png|svg|jpe?g|gif)$/,
         use: {
