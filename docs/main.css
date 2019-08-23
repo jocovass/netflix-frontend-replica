@@ -166,7 +166,7 @@ body {
     display: block; }
 
 .header {
-  background-image: url(data:image/jpeg;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJpbWcvaGVyby5qcGciOw==);
+  background-image: url(img/hero.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
