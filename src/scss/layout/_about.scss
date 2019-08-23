@@ -1,12 +1,20 @@
 .about {
   &__modul-wrapper {
     padding: 10rem 0;
+
+    @include mq(phone) {
+      padding: 5rem 0;
+    }
   }
 
   .cancel {
     padding: 5rem;
     display: flex;
     text-align: center;
+
+    @include mq(phone) {
+      flex-direction: column;
+    }
 
     &__head,
     &__pic {
@@ -20,11 +28,19 @@
     &__head {
       flex-direction: column;
       align-content: flex-end;
+
+      @include mq(phone) {
+        margin-bottom: 5rem;
+      }
     }
 
     &__img {
       width: 45rem;
       height: auto;
+
+      @include mq(phone) {
+        width: 35rem;
+      }
     }
   }
 
@@ -38,11 +54,22 @@
       padding: 7rem;
       display: flex;
       justify-content: space-around;
+
+      @include mq(phone) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 4rem 0;
+      }
     }
 
     &__group {
       text-align: center;
       width: 30rem;
+
+      @include mq(phone) {
+        margin-bottom: 3rem;
+      }
     }
 
     &__img {
@@ -74,12 +101,22 @@
       &:nth-child(odd) {
         background-color: $color-secondary;
       }
+
+      @include mq(phone) {
+        flex-direction: column;
+      }
     }
 
     &__cell {
       flex-basis: 50%;
       display: flex;
       justify-content: space-evenly;
+    }
+
+    &__option {
+      @include mq(phone) {
+        margin-bottom: 5px;
+      }
     }
   }
 }

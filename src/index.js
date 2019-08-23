@@ -5,8 +5,37 @@ import './img/cancel.png';
 const expDate = document.querySelector('.exp-date');
 const navItems = document.querySelectorAll('.navigation__item');
 const sections = document.querySelectorAll('.about-section');
+const priceTitle = document.querySelectorAll('.navigation__title');
 
-const smoothScroll = (target, duration) => {
+function navigationTitleHandle() {
+  console.log('working');
+  let html;
+  priceTitle.forEach(item => {
+    if (window.innerWidth <= 600) {
+      if (item.dataset.section === 'cancel') {
+        html = 'Cancel';
+      } else if (item.dataset.section === 'watch') {
+        html = 'Watch';
+      } else if (item.dataset.section === 'price') {
+        html = 'Price';
+      }
+    } else {
+      if (item.dataset.section === 'cancel') {
+        html = 'No commitments <span>Cancel online at any time</span>';
+      } else if (item.dataset.section === 'watch') {
+        html = 'Watch anywhere';
+      } else if (item.dataset.section === 'price') {
+        html = 'Pick your price';
+      }
+    }
+
+    if (!html) return;
+
+    item.innerHTML = html;
+  });
+}
+
+function smoothScroll(target, duration) {
   const targElement = document.querySelector(`.${target}`);
   const targPosition = targElement.getBoundingClientRect().top;
   const startPos = window.pageYOffset;
@@ -33,7 +62,7 @@ const smoothScroll = (target, duration) => {
   };
 
   requestAnimationFrame(animation);
-};
+}
 
 function displaySection(section) {
   sections.forEach(el => {
@@ -76,3 +105,5 @@ document.addEventListener('DOMContentLoaded', function displayExpData() {
 navItems.forEach(navItem => {
   navItem.addEventListener('click', handleNavigation);
 });
+
+window.addEventListener('resize', navigationTitleHandle);

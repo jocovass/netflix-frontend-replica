@@ -31,9 +31,18 @@
     align-items: center;
     position: relative;
 
+    @include mq(phone) {
+      justify-content: flex-start;
+      margin-left: 2rem;
+    }
+
+    @include mq(phone) {
+      font-size: 25%;
+    }
+
     .btn {
       position: absolute;
-      top: 2rem;
+      top: 3rem;
       right: 2rem;
     }
   }

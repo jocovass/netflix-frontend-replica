@@ -1,6 +1,7 @@
 .navigation {
-  padding: 2.5rem;
+  padding: 1rem;
   border-bottom: 2px solid $color-secondary;
+  background-color: $color-secondary-dark;
 
   &__list {
     list-style: none;
@@ -24,6 +25,11 @@
     width: 8rem;
     height: 8rem;
     margin-bottom: 0.5rem;
+
+    @include mq(phone) {
+      width: 6rem;
+      height: 6rem;
+    }
   }
 
   &__title {
