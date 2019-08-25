@@ -9,4 +9,4 @@ As the repo implies this is a clone of the original Netflix site.
 - HTML
 - SASS
 - JS
-- WEBPACK - and many packeges for automation and optimization.
+- WEBPACK - and packeges for automation and optimization.
