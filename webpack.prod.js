@@ -8,7 +8,6 @@ const UglifyjsWebpackPlugin = require('uglifyjs-webpack-plugin');
 module.exports = merge(common, {
   mode: 'production',
   // devtool: 'source-map',
-  entry: ['@babel/polyfill', './src/index.js'],
   resolve: {
     // tells webpack if it encounters with a file import which doesn't have extension it should try these
     extensions: ['.js', '.jsx']
