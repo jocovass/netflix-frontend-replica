@@ -1,12 +1,8 @@
 # netflix-frontend-replica
 
-As the repo implies this is a clone of the original Netflix site.
-
 [Check it out online!](https://jocovass.github.io/netflix-frontend-replica/)
 
-### Things I used:
+A static webpage that reimplement the original netflix homepage.
+It is a fully responsive webpage made with `HTML, CSS, Sass, JavaScript`.
 
-- HTML
-- SASS
-- JS
-- WEBPACK - and packeges for automation and optimization.
+:octocat: made by Joco.
