@@ -8,7 +8,6 @@ const sections = document.querySelectorAll('.about-section');
 const priceTitle = document.querySelectorAll('.navigation__title');
 
 function navigationTitleHandle() {
-  console.log('working');
   let html;
   priceTitle.forEach(item => {
     if (window.innerWidth <= 600) {
@@ -67,7 +66,6 @@ function smoothScroll(target, duration) {
 function displaySection(section) {
   sections.forEach(el => {
     el.classList.remove('closed');
-    console.log(el);
     if (!el.classList.contains(section)) {
       el.classList.add('closed');
     }
